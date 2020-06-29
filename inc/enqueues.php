@@ -23,6 +23,11 @@ function prelude_theme_scripts() {
   wp_enqueue_style('aos-css', get_template_directory_uri() . '/assets/css/aos.min.css', array(), THEME_VERSION );
   wp_enqueue_style('remodal-css', get_stylesheet_directory_uri() . '/assets/css/remodal.min.css', array(), THEME_VERSION );
 
+  // Fonts
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap', array(), THEME_VERSION );
+
+    wp_enqueue_style('google-fonts', 'https://use.typekit.net/oqx5qfy.css', array(), THEME_VERSION );
+
   // JS
   wp_enqueue_script('prelude-js', get_template_directory_uri() . '/assets/js/theme.min.js', array('jquery'), THEME_VERSION, true );
 

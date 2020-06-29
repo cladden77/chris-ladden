@@ -12,16 +12,43 @@ a {
 }
 
 // Headers
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h1 {
+  font-size: 76px;
+  font-family: $montserrat;
+  color: $primary;
+}
+h2 {
+  font-size: 66px;
+  font-family: $montserrat;
+  color: $primary;
+}
+h3 {
+  font-size: 56px;
+  font-family: $montserrat;
+  color: $primary;
+}
+h4 {
+  font-size: 46px;
+  font-family: $montserrat;
+  color: $primary;
+}
+h5 {
+  font-size: 36px;
+  font-family: $montserrat;
+  color: $primary;
+}
+h6 {
+  font-size: 26px;
+  font-family: $montserrat;
+  color: $primary;
+}
 
 // Body Copy
 p, ul, ol, li {
   margin-bottom: 15px;
+  font-size: 18px;
+  font-family: $chaparralPro;
+  color: $primary;
 }
 
 // Media Queries

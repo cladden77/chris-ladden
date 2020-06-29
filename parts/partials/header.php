@@ -20,7 +20,7 @@
     </div>
     <div class="col-6 md-col-6 sm-col-6 sm-hide text-right header__navigation-wrap">
       <?php // Primary Menu
-        wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'menu_class' => 'primary-nav') );
+        wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>
     </div>
     <div class="col-3 md-col-4 sm-col-2 sm-hide text-right header__utility-wrap">

@@ -30,9 +30,11 @@
         </h2>
       <?php endif; ?>
       <div >
+        <?php if($link) : ?>
         <a class="button button--primary hero-button" href="<?php echo $link['url']; ?>">
           <?php echo $link['title']; ?>
         </a>
+        <?php endif; ?>
       </div>
     </div>
   </div>

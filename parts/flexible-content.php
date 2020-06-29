@@ -15,7 +15,7 @@ if( have_rows('flexible_content') ): ?>
          get_template_part('parts/global/flexible-content/cta');
 
        // Dropdowns
-       if( get_row_layout() == 'dropdowns' ) :
+       elseif( get_row_layout() == 'dropdowns' ) :
          get_template_part('parts/global/flexible-content/dropdowns');
 
        // 1 Column (Full Width)
