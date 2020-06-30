@@ -4,8 +4,8 @@
  *
  * Template part used globaly
  *
- * @package Prelude Plus
- * @author Malkin Creative
+ * @package Ladden Studios
+ * @author Chris Ladden
  * @since 0.0.1
  */
  // Variables

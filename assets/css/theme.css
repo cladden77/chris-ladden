@@ -3836,10 +3836,10 @@ li {
 }
 
 .footer .footer__logo-wrap a img {
-	max-width: 80%;
+	max-width: 40%;
 }
 
-.footer .footer-nav--copyright h6 {
+.footer h6 {
 	text-align: center !important;
 }
 
@@ -4859,6 +4859,15 @@ li {
 .sm-col-center,
 .sm-col-centered {
 	margin: 0 auto;
+}
+
+.footer .footer__logo-wrap a img {
+	margin-top: 3.125rem;
+}
+
+.footer .footer-nav {
+	display: inline-block !important;
+	text-align: center !important;
 }
 
 .dropdown__box h2 {

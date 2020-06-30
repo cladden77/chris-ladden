@@ -59,21 +59,31 @@
     .footer__logo-wrap {
       a {
         img {
-          max-width: 80%;
+          max-width: 40%;
         }
       }
     }
 
-    .footer-nav {
-      &--copyright {
-        h6 {
-        text-align: center !important;
-       }
-      }
+    h6 {
+      text-align: center !important;
     }
   }
 }
 
 @media screen and (max-width: $small-breakpoint) {
+  .footer {
 
+    .footer__logo-wrap {
+      a {
+        img {
+          margin-top: rem(50);
+        }
+      }
+    }
+
+    .footer-nav {
+      display: inline-block !important;
+      text-align: center !important;
+    }
+  }
 }
