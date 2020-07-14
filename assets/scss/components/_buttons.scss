@@ -3,7 +3,7 @@
 ----------------------------------------------------------------------------*/
 .button {
   position: relative;
-  min-width: rem(210);
+  //min-width: rem(210);
   top: 0;
   display: inline-block;
   margin: 0 auto;
@@ -12,8 +12,8 @@
   text-align: center;
   line-height: rem(25);
   font-size: rem(18);
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: $light;
+  //text-transform: uppercase;
   transition: all 0.2s ease !important;
 
 
@@ -39,11 +39,26 @@
   }
 
   &--white {
-    color: $primary;
-    background-color: $offwhite;
+    color: $white;
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 10px;
 
     &:hover {
-      color: $primary;
+      color: #41bab6;
+      background-color: $white;
+    }
+  }
+
+    &--outline {
+      color: #B2E743;
+      background-color: transparent;
+      border: 2px solid #B2E743;
+      border-radius: 10px;
+
+      &:hover {
+        color: $primary;
+        background-color: #B2E743;
     }
   }
 }

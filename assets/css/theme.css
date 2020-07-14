@@ -2041,11 +2041,20 @@ li {
   Header
 ------------------------------------------------------------------------------*/
 
+.navbar-fixed-top.scrolled {
+	background-color: #002D5A !important;
+	opacity: 0.9;
+	-webkit-transition: background-color 400ms linear;
+	-o-transition: background-color 400ms linear;
+	transition: background-color 400ms linear;
+}
+
 .header {
-	-webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
 	background: #002D5A;
+	background-color: transparent;
 	color: #fff;
+	z-index: 9998;
+	position: fixed;
 }
 
 .header__logo-wrap a {
@@ -2056,7 +2065,8 @@ li {
 }
 
 .header__logo-wrap a img {
-	max-width: 200px;
+	max-width: 150px;
+	margin: 0.9375rem;
 }
 
 .header .header-search {
@@ -2316,7 +2326,6 @@ li {
 
 .button {
 	position: relative;
-	min-width: 13.125rem;
 	top: 0;
 	display: inline-block;
 	margin: 0 auto;
@@ -2325,8 +2334,7 @@ li {
 	text-align: center;
 	line-height: 1.5625rem;
 	font-size: 1.125rem;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 300;
 	-webkit-transition: all 0.2s ease !important;
 	-o-transition: all 0.2s ease !important;
 	transition: all 0.2s ease !important;
@@ -2356,12 +2364,27 @@ li {
 }
 
 .button--white {
-	color: #002D5A;
-	background-color: #F5F5F5;
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 10px;
 }
 
 .button--white:hover {
+	color: #41bab6;
+	background-color: #fff;
+}
+
+.button--outline {
+	color: #B2E743;
+	background-color: transparent;
+	border: 2px solid #B2E743;
+	border-radius: 10px;
+}
+
+.button--outline:hover {
 	color: #002D5A;
+	background-color: #B2E743;
 }
 
 /*------------------------------------------------------------------------------
@@ -2391,6 +2414,79 @@ li {
 /*------------------------------------------------------------------------------
   CTA
 ------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+  BIO
+------------------------------------------------------------------------------*/
+
+.bio {
+	margin-bottom: 6.25rem;
+}
+
+.bio h3 {
+	font-weight: 400;
+	margin-top: 0;
+}
+
+.bio__bio-image {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	left: 250px;
+	z-index: 9999 !important;
+	overflow: hidden;
+	height: 300px;
+	width: 250px;
+}
+
+.bio__bio-image img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+.bio__description {
+	overflow: hidden;
+	max-height: 400px;
+	height: 100%;
+	z-index: 9995;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.bio__description::before {
+	z-index: 0;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #41bab6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#41bab6), to(rgba(54, 158, 164, 0.7)));
+	background: -o-linear-gradient(top, #41bab6 0%, rgba(54, 158, 164, 0.7) 100%);
+	background: linear-gradient(180deg, #41bab6 0%, rgba(54, 158, 164, 0.7) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#41bab6",endColorstr="#369ea4",GradientType=1);
+}
+
+.bio__description p {
+	color: #fff;
+	padding: 0 12.5rem 0;
+	position: relative;
+}
+
+.bio__description h4 {
+	font-weight: 400;
+	color: #fff;
+	position: relative;
+	padding: 0 12.5rem;
+	margin-bottom: 0;
+}
+
+.bio__description .button {
+	margin: 1.875rem 12.5rem;
+}
 
 /*------------------------------------------------------------------------------
   Dropdown
@@ -2544,11 +2640,28 @@ li {
 	position: relative;
 	padding: 4.375rem 0;
 	overflow: hidden;
+	display: inline-block;
+}
+
+.hero h1 {
+	color: #fff;
+	text-align: center;
+	padding: 80px 0;
+	font-size: 42px;
+}
+
+.hero__row__content {
+	top: 40px;
 }
 
 /*------------------------------------------------------------------------------
   1 Col
 ------------------------------------------------------------------------------*/
+
+.one-col p {
+	margin: 4.6875rem 0;
+	line-height: 2.5rem;
+}
 
 .remodal {
 	max-width: 800px !important;
@@ -4862,12 +4975,22 @@ li {
 }
 
 .footer .footer__logo-wrap a img {
+	max-width: 60%;
 	margin-top: 3.125rem;
 }
 
 .footer .footer-nav {
-	display: inline-block !important;
+	display: block !important;
 	text-align: center !important;
+}
+
+.footer .footer-nav ul {
+	display: block !important;
+}
+
+.footer .footer-nav ul li {
+	font-size: 26px;
+	padding: 10px 0 !important;
 }
 
 .dropdown__box h2 {

@@ -76,14 +76,24 @@
     .footer__logo-wrap {
       a {
         img {
+          max-width: 60%;
           margin-top: rem(50);
         }
       }
     }
 
     .footer-nav {
-      display: inline-block !important;
+      display: block !important;
       text-align: center !important;
+
+      ul {
+        display: block !important;
+
+        li {
+          font-size: 26px;
+          padding: 10px 0 !important;
+        }
+      }
     }
   }
 }

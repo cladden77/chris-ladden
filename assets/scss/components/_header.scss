@@ -1,18 +1,28 @@
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
+.navbar-fixed-top {
+  &.scrolled {
+    background-color: $primary !important;
+    opacity: 0.9;
+    transition: background-color 400ms linear;
+  }
+}
 
 .header {
-  box-shadow: $box-shadow;
   background: $primary;
+  background-color: transparent;
   color: $white;
+  z-index: 9998;
+  position: fixed;
 
   &__logo-wrap {
     a {
       display: flex;
 
       img {
-        max-width: 200px;
+        max-width: 150px;
+        margin: rem(15);
       }
     }
   }
