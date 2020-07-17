@@ -22,28 +22,33 @@ $link = get_sub_field('button');
         </h3>
       <?php endif; ?>
     </div>
-    <div class="row row--full-width">
-      <div class="col-3 offset-1 sm-col-8 sm-col-centered bio__bio-image">
-        <img src="<?php echo $bioimg[0]; ?>" alt="<?php echo $bioalt_text; ?>" />
-      </div>
-      <div class="col-8 sm-col-11 col-right col-no-pad bio__description" style="background:url('<?php echo $img[0]; ?>') center center/cover no-repeat;">
-        <?php if($subheader) : ?>
-          <h4>
-            <?php echo $subheader; ?>
-          </h4>
-        <?php endif; ?>
-        <?php if($content) : ?>
-          <div class="bio__content">
-            <?php echo $content; ?>
-          </div>
-        <?php endif; ?>
 
-        <?php if($link) : ?>
-          <a class="button button--white" href="<?php echo $link['url']; ?>">
-            <?php echo $link['title']; ?>
-          </a>
-        <?php endif; ?>
+    <div class="bio__row--background">
+      <div class="row row--full-width">
+        <div class="col-4 md-col-3 sm-col-centered bio__bio-image">
+          <img src="<?php echo $bioimg[0]; ?>" alt="<?php echo $bioalt_text; ?>" />
+        </div>
+        <div class="col-8 md-col-9 col-right sm-col-centered col-no-pad">
+          <div class="bio__description sm-text-center">
+            <?php if($subheader) : ?>
+              <h4 class="sm-text-center">
+                <?php echo $subheader; ?>
+              </h4>
+            <?php endif; ?>
+            <?php if($content) : ?>
+              <div class="bio__content sm-text-center">
+                <?php echo $content; ?>
+              </div>
+            <?php endif; ?>
+
+            <?php if($link) : ?>
+              <a class="button button--white" href="<?php echo $link['url']; ?>">
+                <?php echo $link['title']; ?>
+              </a>
+            <?php endif; ?>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
   </div>
 </section>

@@ -1935,7 +1935,7 @@ ul,
 ol,
 li {
 	margin-bottom: 15px;
-	font-size: 18px;
+	font-size: 22px;
 	font-family: "Chaparral-Pro", serif;
 	color: #002D5A;
 }
@@ -2055,6 +2055,7 @@ li {
 	color: #fff;
 	z-index: 9998;
 	position: fixed;
+	top: 0;
 }
 
 .header__logo-wrap a {
@@ -2428,64 +2429,61 @@ li {
 	margin-top: 0;
 }
 
-.bio__bio-image {
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	left: 250px;
-	z-index: 9999 !important;
-	overflow: hidden;
-	height: 300px;
-	width: 250px;
+.bio__row--background {
+	background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(30%, white), color-stop(30%, transparent)), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 181, 174, 0.9)), to(rgba(4, 57, 97, 0.9))), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+	background-image: -o-linear-gradient(left, white 0%, white 30%, transparent 30%), -o-linear-gradient(top, rgba(0, 181, 174, 0.9) 0%, rgba(4, 57, 97, 0.9) 100%), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+	background-image: linear-gradient(to right, white 0%, white 30%, transparent 30%), linear-gradient(to bottom, rgba(0, 181, 174, 0.9) 0%, rgba(4, 57, 97, 0.9) 100%), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+	background-position: center center, center center;
+	background-size: 100%, cover;
+	background-repeat: repeat, no-repeat;
 }
 
-.bio__bio-image img {
+.bio__row--background .bio__bio-image {
+	margin: auto;
+	max-width: none;
+	padding: 2em 0;
+	text-align: right;
+	z-index: 9997 !important;
+}
+
+.bio__row--background .bio__bio-image img {
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+	position: relative;
 	max-width: 100%;
-	max-height: 100%;
-	display: block;
+	width: 400px;
+	height: auto;
+	left: 50px;
 }
 
-.bio__description {
-	overflow: hidden;
-	max-height: 400px;
-	height: 100%;
-	z-index: 9995;
+.bio .bio__description {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
 	align-self: center;
+	padding: 100px;
+	padding-left: 150px;
+	margin: auto;
 }
 
-.bio__description::before {
-	z-index: 0;
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: #41bab6;
-	background: -webkit-gradient(linear, left top, left bottom, from(#41bab6), to(rgba(54, 158, 164, 0.7)));
-	background: -o-linear-gradient(top, #41bab6 0%, rgba(54, 158, 164, 0.7) 100%);
-	background: linear-gradient(180deg, #41bab6 0%, rgba(54, 158, 164, 0.7) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#41bab6",endColorstr="#369ea4",GradientType=1);
-}
-
-.bio__description p {
-	color: #fff;
-	padding: 0 12.5rem 0;
-	position: relative;
-}
-
-.bio__description h4 {
-	font-weight: 400;
+.bio .bio__description h4 {
+	font-family: "montserrat", sans-serif;
+	font-weight: 300;
 	color: #fff;
 	position: relative;
-	padding: 0 12.5rem;
-	margin-bottom: 0;
+	margin: 0;
 }
 
-.bio__description .button {
-	margin: 1.875rem 12.5rem;
+.bio .bio__description .bio__content {
+	max-width: 1091px;
+}
+
+.bio .bio__description .bio__content p {
+	color: #fff;
+	margin: 20px 0 30px;
+}
+
+.bio .bio__description .bio__content .button {
+	margin: 1.875rem 0;
 }
 
 /*------------------------------------------------------------------------------
@@ -3956,6 +3954,12 @@ li {
 	text-align: center !important;
 }
 
+.bio__row--background {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 181, 174, 0.9)), to(rgba(4, 57, 97, 0.9))), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+	background-image: -o-linear-gradient(top, rgba(0, 181, 174, 0.9) 0%, rgba(4, 57, 97, 0.9) 100%), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+	background-image: linear-gradient(to bottom, rgba(0, 181, 174, 0.9) 0%, rgba(4, 57, 97, 0.9) 100%), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+}
+
 }
 
 @media screen and (max-width: 65.625em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -4991,6 +4995,31 @@ li {
 .footer .footer-nav ul li {
 	font-size: 26px;
 	padding: 10px 0 !important;
+}
+
+.bio__row--background {
+	max-width: 100%;
+}
+
+.bio__row--background .bio__bio-image {
+	text-align: center;
+}
+
+.bio__row--background .bio__bio-image img {
+	margin-top: 40px;
+	left: unset;
+	width: 60%;
+}
+
+.bio .bio__description {
+	padding-top: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 75px;
+}
+
+.bio .bio__description .bio__content {
+	max-width: 100%;
 }
 
 .dropdown__box h2 {
