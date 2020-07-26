@@ -37,6 +37,7 @@
     align-self: center;
     padding: 100px;
     padding-left: 150px;
+    padding-right: 250px;
     margin: auto;
 
     h4 {
@@ -48,7 +49,6 @@
     }
 
     .bio__content {
-      max-width: 1091px;
 
       p {
         color: $white;
@@ -67,6 +67,10 @@
   .bio {
     &__row--background {
       background-image: linear-gradient(to bottom, rgba(0,181,174,0.9) 0%, rgba(4,57,97,0.9) 100%),url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+    }
+
+    .bio__description {
+      padding-right: 100px;
     }
   }
 }

@@ -1937,7 +1937,7 @@ li {
 	margin-bottom: 15px;
 	font-size: 22px;
 	font-family: "Chaparral-Pro", serif;
-	color: #002D5A;
+	color: #808080;
 }
 
 /*----------------------------------------------------------------------------
@@ -2336,6 +2336,7 @@ li {
 	line-height: 1.5625rem;
 	font-size: 1.125rem;
 	font-weight: 300;
+	text-transform: uppercase;
 	-webkit-transition: all 0.2s ease !important;
 	-o-transition: all 0.2s ease !important;
 	transition: all 0.2s ease !important;
@@ -2343,14 +2344,16 @@ li {
 
 .button--primary {
 	color: #fff;
-	background: #01969B;
-	background: -webkit-gradient(linear, left top, left bottom, from(#01969B), to(#014c4f));
-	background: -o-linear-gradient(#01969B, #014c4f);
-	background: linear-gradient(#01969B, #014c4f);
+	background: -webkit-gradient(linear, left top, left bottom, from(#369ea4), to(#41bab6));
+	background: -o-linear-gradient(#369ea4, #41bab6);
+	background: linear-gradient(#369ea4, #41bab6);
 }
 
 .button--primary:hover {
 	color: #fff !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#41bab6), to(#369ea4));
+	background: -o-linear-gradient(#41bab6, #369ea4);
+	background: linear-gradient(#41bab6, #369ea4);
 }
 
 .button--secondary {
@@ -2462,6 +2465,7 @@ li {
 	align-self: center;
 	padding: 100px;
 	padding-left: 150px;
+	padding-right: 250px;
 	margin: auto;
 }
 
@@ -2471,10 +2475,6 @@ li {
 	color: #fff;
 	position: relative;
 	margin: 0;
-}
-
-.bio .bio__description .bio__content {
-	max-width: 1091px;
 }
 
 .bio .bio__description .bio__content p {
@@ -2611,9 +2611,10 @@ li {
 	background: url("../img/section-bg-img.jpg") left top/100% auto no-repeat;
 }
 
-.fifty-fifty h1 {
-	padding: 3.125rem 0;
-	color: #808080;
+.fifty-fifty h2 {
+	padding: 0;
+	font-weight: 400;
+	margin: 0;
 }
 
 .fifty-fifty .button {
@@ -2623,6 +2624,11 @@ li {
 
 .fifty-fifty ul {
 	text-align: left;
+}
+
+.fifty-fifty p {
+	padding-top: 3.75rem;
+	color: #808080;
 }
 
 .ie-11 .fifty-fifty .row .col-6,
@@ -2936,6 +2942,50 @@ li {
 /*------------------------------------------------------------------------------
   3 Col
 ------------------------------------------------------------------------------*/
+
+.three-col {
+	margin-bottom: 6.25rem;
+	padding: 0 4.6875rem;
+}
+
+.three-col h2 {
+	font-weight: 400;
+	margin-top: 0;
+}
+
+.three-col h3 {
+	font-weight: 400;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.three-col .col-centered__grid-box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 0.9375rem;
+}
+
+.three-col .col-centered__grid-box .col-wrap {
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	padding: 30px;
+	margin: 1.25rem 0;
+}
+
+.three-col .col-centered__grid-box .col-wrap img {
+	margin-bottom: 30px;
+	max-width: 100%;
+	width: 100px;
+	max-height: 100%;
+	height: 100px;
+}
+
+.three-col .button {
+	margin-top: 1.875rem;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
@@ -3958,6 +4008,43 @@ li {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 181, 174, 0.9)), to(rgba(4, 57, 97, 0.9))), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
 	background-image: -o-linear-gradient(top, rgba(0, 181, 174, 0.9) 0%, rgba(4, 57, 97, 0.9) 100%), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
 	background-image: linear-gradient(to bottom, rgba(0, 181, 174, 0.9) 0%, rgba(4, 57, 97, 0.9) 100%), url(../img/brad-neathery-nPy0X4xew60-unsplash.jpg);
+}
+
+.bio .bio__description {
+	padding-right: 100px;
+}
+
+.fifty-fifty {
+	padding: 0;
+	margin-bottom: 3.125rem;
+}
+
+.fifty-fifty p {
+	padding-top: 0;
+	color: #808080;
+}
+
+.fifty-fifty .fifty-fifty--content {
+	-webkit-box-ordinal-group: 3;
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
+}
+
+.fifty-fifty .fifty-fifty--img img {
+	padding-top: 1.875rem;
+}
+
+.fifty-fifty .row--reverse {
+	-webkit-box-ordinal-group: 2;
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+
+.fifty-fifty .button {
+	margin-top: 2.5rem;
+	margin-bottom: 3.125rem;
 }
 
 }
@@ -5049,7 +5136,8 @@ li {
 }
 
 .fifty-fifty {
-	padding: 1.875rem 0;
+	padding: 0;
+	margin-bottom: 3.125rem;
 }
 
 .fifty-fifty.background {
@@ -5058,6 +5146,10 @@ li {
 
 .fifty-fifty .col-5 {
 	margin-top: 1.875rem;
+}
+
+.three-col {
+	margin-bottom: 3.125rem;
 }
 
 }

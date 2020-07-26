@@ -13,17 +13,17 @@
   line-height: rem(25);
   font-size: rem(18);
   font-weight: $light;
-  //text-transform: uppercase;
+  text-transform: uppercase;
   transition: all 0.2s ease !important;
 
 
   &--primary {
     color: $white;
-    background: $secondary;
-    background: linear-gradient($secondary, darken( $secondary, 15% ));
+    background: linear-gradient( rgba(54, 158, 164, 100%), rgba( 65, 186, 182, 100% ));
 
     &:hover {
       color: $white !important;
+          background: linear-gradient( rgba( 65, 186, 182, 100% ), rgba(54, 158, 164, 100%));
     }
   }
 

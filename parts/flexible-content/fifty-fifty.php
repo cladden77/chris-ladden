@@ -14,9 +14,9 @@ $btn = get_sub_field('button');
 $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
 
 <section class="container fifty-fifty">
-  <div class="row">
+  <div class="row row--full-width ">
     <div class="sm-col-11 col-10 col-centered">
-      <div class="row row--align-items-center<?php echo $rowClass; ?>">
+      <div class="row row--full-width row--align-items-center<?php echo $rowClass; ?>">
 
         <?php if($header) : ?>
           <div class="col-12">
@@ -26,26 +26,27 @@ $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
           </div>
         <?php endif; ?>
 
-        <div class="col-6 sm-text-center">
+        <div class="col-5 md-col-12 stretch md-text-center fifty-fifty--content">
           <?php if($content_header) : ?>
             <h3><?php echo $content_header; ?></h3>
           <?php endif;
 
           echo $content; ?>
+
+          <?php if( $btnToggle ) : ?>
+            <div class="text-left md-text-center">
+              <a href="<?php echo esc_url($btn['url']); ?>" class="button button--primary" role="link" title="<?php echo $btn['title']; ?>">
+                <?php echo $btn['title']; ?>
+              </a>
+            </div>
+          <?php endif; ?>
         </div>
 
-        <div class="col-5 sm-col-8 sm-col-centered">
+        <div class="col-6 md-col-12 sm-col-12 md-col-centered fifty-fifty--img">
           <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
         </div>
-      </div>
 
-      <?php if( $btnToggle ) : ?>
-        <div class="text-center">
-          <a href="<?php echo esc_url($btn['url']); ?>" class="button button--primary" role="link" title="<?php echo $btn['title']; ?>">
-            <?php echo $btn['title']; ?>
-          </a>
-        </div>
-      <?php endif; ?>
+      </div>
     </div>
   </div>
 </section>

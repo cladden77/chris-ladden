@@ -10,9 +10,10 @@
     background: url('../img/section-bg-img.jpg') left top/100% auto no-repeat;
   }
 
-  h1 {
-    padding: rem(50) 0;
-    color: $gray;
+  h2 {
+    padding: 0;
+    font-weight: $regular;
+    margin: 0;
   }
 
   .button {
@@ -23,12 +24,18 @@
   ul {
     text-align: left;
   }
+
+  p {
+    padding-top: rem(60);
+    color: $gray;
+  }
 }
 
 // Media Queries
 @media screen and (max-width:$small-breakpoint) {
   .fifty-fifty {
-    padding: rem(30) 0;
+    padding: 0;
+    margin-bottom: rem(50);
 
     &.background {
       padding-top: rem(75);
@@ -36,6 +43,37 @@
 
     .col-5 {
       margin-top: rem(30);
+    }
+  }
+}
+
+@media screen and (max-width:$medium-breakpoint) {
+  .fifty-fifty {
+    padding: 0;
+    margin-bottom: rem(50);
+
+    p {
+      padding-top: 0;
+      color: $gray;
+    }
+
+    .fifty-fifty--content {
+      order: 2;
+    }
+
+    .fifty-fifty--img {
+      img {
+        padding-top: rem(30);
+      }
+    }
+
+    .row--reverse {
+      order: 1;
+    }
+
+    .button {
+      margin-top: rem(40);
+      margin-bottom: rem(50);
     }
   }
 }
