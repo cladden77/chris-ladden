@@ -1,8 +1,9 @@
 /*------------------------------------------------------------------------------
-  50/50
+  50/50 with Background
 ------------------------------------------------------------------------------*/
-.fifty-fifty {
-  padding: 0 0 rem(50);
+.fifty-fifty-background {
+  padding: rem(50) 0;
+  margin-top: rem(50);
   overflow: hidden;
 
   &.background {
@@ -26,12 +27,11 @@
   }
 
   p {
-    color: $gray;
+    color: $white;
   }
 
   &--img {
     padding: 0;
-    box-shadow: 0 0 15px rgba(0,0,0,0.45);
 
     img {
       display: block;
@@ -41,7 +41,7 @@
 
 // Media Queries
 @media screen and (max-width:$small-breakpoint) {
-  .fifty-fifty {
+  .fifty-fifty-background {
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -62,7 +62,7 @@
 }
 
 @media screen and (max-width:$medium-breakpoint) {
-  .fifty-fifty {
+  .fifty-fifty-background {
     padding: 0;
     margin-bottom: rem(50);
 
@@ -70,7 +70,15 @@
       padding-top: rem(30);
     }
 
-    .fifty-fifty--content {
+    &--img {
+      padding: rem(75) 0 0;
+
+      img {
+        display: block;
+      }
+    }
+
+    .fifty-fifty-background--content {
       order: 2;
     }
 
@@ -87,7 +95,7 @@
 
 // ie11 Fixes
 .ie-11 {
-  .fifty-fifty .row .col-6, .fifty-fifty .row .col-5 {
+  .fifty-fifty-background .row .col-6, .fifty-fifty .row .col-5 {
     max-height: 450px;
   }
 }
