@@ -193,3 +193,19 @@
     }
   }
 }
+
+//Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .header {
+    height: 100px;
+
+    &__logo-wrap {
+      a {
+        img {
+          max-width: 150px;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}

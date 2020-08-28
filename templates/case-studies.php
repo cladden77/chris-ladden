@@ -1,6 +1,6 @@
 <?php
   /**
-   * Template Name: Recent Work
+   * Template Name: Case Studies
    *
    */
   get_header();

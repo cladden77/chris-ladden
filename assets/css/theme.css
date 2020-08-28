@@ -1372,7 +1372,7 @@ header.nifty-nav-header {
 	border-radius: 1px;
 	height: 3px;
 	width: 30px;
-	background: #ababab;
+	background: #fff;
 	position: absolute;
 	top: 21px;
 	right: 0px;
@@ -2416,7 +2416,7 @@ li {
 ----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------
-  Recent Work
+  Case Studies
 ----------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------
@@ -2661,7 +2661,6 @@ li {
 
 .fifty-fifty-background.background {
 	padding-top: 9.375rem;
-	background: url("../img/section-bg-img.jpg") left top/100% auto no-repeat;
 }
 
 .fifty-fifty-background h2 {
@@ -4144,6 +4143,15 @@ li {
 	margin-bottom: 3.125rem;
 }
 
+.page-id-359 .fifty-fifty-background {
+	margin-bottom: 0 !important;
+}
+
+.three-col {
+	padding: 0;
+	margin-bottom: 3.125rem;
+}
+
 }
 
 @media screen and (max-width: 65.625em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -5162,6 +5170,15 @@ li {
 	margin: 0 auto;
 }
 
+.header {
+	height: 100px;
+}
+
+.header__logo-wrap a img {
+	max-width: 150px;
+	margin: 0 !important;
+}
+
 .footer .footer__logo-wrap a img {
 	max-width: 60%;
 	margin-top: 3.125rem;
@@ -5271,6 +5288,7 @@ li {
 }
 
 .three-col {
+	padding: 0;
 	margin-bottom: 3.125rem;
 }
 
