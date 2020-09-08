@@ -29,15 +29,16 @@
     box-shadow: 0 0 15px 4px rgba(0,0,0, 0.4);
 
     h2 {
+      font-size: 40px;
       position: relative;
       width: calc(100% + 2px);
       left: -1px;
       margin: 0 !important;
       padding: rem(20);
       background: $primary; /* Old browsers */
-      background: -moz-linear-gradient(top, $primary 0%, darken($primary, 15%) 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, $primary 0%,darken($primary, 15%) 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, $primary 0%,darken($primary, 15%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      background: -moz-linear-gradient(top, $primary 0%, darken($primary, 5%) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, $primary 0%,darken($primary, 5%) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, $primary 0%,darken($primary, 5%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='darken($primary, 15%)',GradientType=0 ); /* IE6-9 */
 
       color: $white;
@@ -86,22 +87,22 @@
     }
 
     .button {
-      //height: rem(42);
-      padding: rem(15) rem(25) !important;
-      //margin: 0 !important;
-      border: none !important;
-      color: $white;
-      line-height: rem(25) !important;
-      font-size: rem(20) !important;
-      font-weight: 700 !important;
-      background: $primary;
-      background: linear-gradient($primary, darken($primary, 15%));
-      transition: all 0.2s ease;
-
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
       position: relative;
-      overflow: hidden;
+      //min-width: rem(210);
+      top: 0;
+      display: inline-block;
+      margin: 0 auto;
+      padding: rem(10) rem(20);
+      border-radius: rem(5);
+      border: none !important;
+      text-align: center;
+      line-height: rem(25);
+      font-size: rem(18);
+      font-weight: $light;
+      text-transform: uppercase;
+      transition: all 0.2s ease !important;
+      color: $white;
+      background: linear-gradient( rgba(54, 158, 164, 100%), rgba( 65, 186, 182, 100% ));
 
       &:before {
         content: "";
@@ -120,8 +121,9 @@
         transition-timing-function: ease-out;
       }
       &:hover {
+        color: $white !important;
+        background: linear-gradient( rgba( 65, 186, 182, 100% ), rgba(54, 158, 164, 100%));
         cursor: pointer;
-        color: $white;
 
         &:before {
           right: 0;

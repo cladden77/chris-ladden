@@ -8,6 +8,7 @@ $alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
 $bgimg_id = get_sub_field('bg_image');
 $bgimg = wp_get_attachment_image_src($bgimg_id, 'fifty-fifty-background');
 $bgalt_text = get_post_meta($bgimg_id , '_wp_attachment_image_alt', true);
+$bgColor = get_sub_field('bg_color_overlay');
 $content_header = get_sub_field('content_header');
 $content = get_sub_field('content');
 $btnToggle = get_sub_field('button_toggle');
@@ -16,7 +17,8 @@ $btn = get_sub_field('button');
 // Conditional classes/styles
 $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
 
-<section class="container fifty-fifty-background" style="background: linear-gradient(to bottom, rgba(0,181,174,0.9) 0%, rgba(4,57,97,0.9) 100%), url('<?php echo $bgimg[0]; ?>') center <?php echo $bgimg_position; ?>/cover no-repeat;">
+<section class="container fifty-fifty-background" style="background: url('<?php echo $bgimg[0]; ?>') center <?php echo $bgimg_position; ?>/cover no-repeat">
+  <div class="<?php echo $bgColor; ?>">
   <div class="row row--full-width ">
     <div class="sm-col-11 col-10 col-centered">
       <div class="row row--full-width row--align-items-center<?php echo $rowClass; ?>">
@@ -52,4 +54,5 @@ $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
       </div>
     </div>
   </div>
+</div>
 </section>
