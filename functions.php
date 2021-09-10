@@ -1,6 +1,6 @@
 <?php
 
-  define( 'THEME_VERSION', '0.0.2' );
+  define( 'THEME_VERSION', '0.0.3' );
 
   /**
    * Load acf
