@@ -74,12 +74,15 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row row--justify-content-center">
         <?php // Mobile Menu
           wp_nav_menu(array('theme_location' => 'mobile', 'container' => 'nav', 'menu_class' => 'mobile-nav'));
         ?>
-        <a class="button button--primary" href="#tell-me-more">Tell Me More</a>
       </div>
+
+      <div class="row row--justify-content-center">
+                <a class="button button--primary" href="#tell-me-more">Contact</a>
+              </div>
     </div>
   </div>
 

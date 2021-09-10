@@ -26,6 +26,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'one_column' ) :
          get_template_part('parts/flexible-content/one-col');
 
+       // Full Width
+       elseif( get_row_layout() == 'full_width' ) :
+         get_template_part('parts/flexible-content/full-width');
+
        // 50/50
        elseif( get_row_layout() == 'fifty_fifty' ) :
          get_template_part('parts/flexible-content/fifty-fifty');

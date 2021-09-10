@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------------------
+  Full Width
+------------------------------------------------------------------------------*/
+.full-width {
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    margin: rem(75) 0;
+    line-height: rem(40);
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .full-width {
+
+  }
+}

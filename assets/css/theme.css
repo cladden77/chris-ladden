@@ -1332,7 +1332,7 @@ header.nifty-nav-header {
 	width: 100%;
 	border: 0;
 	padding: 0;
-	background: #4b4b4b;
+	background: #fff;
 	top: 88px;
 	display: none;
 	z-index: 9999;
@@ -1346,7 +1346,7 @@ header.nifty-nav-header {
 	background: rgba(0, 0, 0, 0.62);
 	height: 100%;
 	width: 100%;
-	z-index: 9998;
+	z-index: 9997;
 	position: fixed;
 	top: 0;
 	opacity: 0;
@@ -2263,6 +2263,49 @@ li {
 	opacity: 1;
 }
 
+.nifty-panel {
+	overflow: hidden;
+	top: 175px;
+}
+
+.nifty-panel .button--primary {
+	margin: 0 2.5rem 1.5rem;
+}
+
+.nifty-panel .mobile-nav {
+	width: 100%;
+	background-color: #fff;
+	list-style: none !important;
+	text-align: center;
+	padding: 0;
+}
+
+.nifty-panel .mobile-nav a {
+	color: #002D5A;
+	font-family: "montserrat", sans-serif;
+}
+
+.nifty-panel .mobile-nav ul {
+	width: 100%;
+	list-style: none !important;
+	margin-top: 1.25rem;
+	padding-right: 1.875rem;
+	text-align: center;
+}
+
+.nifty-panel .mobile-nav ul li {
+	font-size: 1.875rem;
+	color: #002D5A;
+}
+
+.nifty-panel .mobile-nav ul li a {
+	color: #002D5A;
+}
+
+.nifty-panel .mobile-nav ul li.current-menu-item a {
+	color: #002D5A;
+}
+
 /*------------------------------------------------------------------------------
   Footer
 ------------------------------------------------------------------------------*/
@@ -2757,6 +2800,19 @@ li {
 ------------------------------------------------------------------------------*/
 
 .one-col p {
+	margin: 4.6875rem 0;
+	line-height: 2.5rem;
+}
+
+/*------------------------------------------------------------------------------
+  Full Width
+------------------------------------------------------------------------------*/
+
+.full-width h2 {
+	font-size: 32px;
+}
+
+.full-width p {
 	margin: 4.6875rem 0;
 	line-height: 2.5rem;
 }
@@ -5222,6 +5278,11 @@ li {
 .header__logo-wrap a img {
 	max-width: 150px;
 	margin: 0 !important;
+}
+
+.header .nifty-panel {
+	overflow: hidden;
+	top: 150px;
 }
 
 .footer .footer__logo-wrap a img {
