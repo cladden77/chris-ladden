@@ -7,6 +7,8 @@
   $header = get_field('header');
   $subheader = get_field('subheader');
   $link = get_field('cta_button');
+  $hero_bottom_divider = get_field('hero_bottom_divider');
+  $background_box_for_text_content = get_field("background_box_for_text_content");
 
   // Conditional classes
   $sectionClass = $hero_bottom_divider ? ' hero--bottom-divider' : '';
