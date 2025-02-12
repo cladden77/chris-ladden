@@ -7,6 +7,7 @@ $img = wp_get_attachment_image_src($img_id, 'fifty-fifty-background');
 $alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
 $bgimg_id = get_sub_field('bg_image');
 $bgimg = wp_get_attachment_image_src($bgimg_id, 'fifty-fifty-background');
+$bgimg_position = get_sub_field('background_position');
 $bgalt_text = get_post_meta($bgimg_id , '_wp_attachment_image_alt', true);
 $bgColor = get_sub_field('bg_color_overlay');
 $content_header = get_sub_field('content_header');
