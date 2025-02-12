@@ -22,7 +22,7 @@
       <?php // Primary Menu
         wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>
-      <a class="button button--outline" data-remodal-target="contact" href="#">Contact</a>
+      <a class="button button--outline" data-remodal-target="contact" href="mailto:chris.ladden@gmail.com">Contact</a>
     </div>
     <!--<div class="col-2 md-col-3 sm-col-2 sm-hide text-right header__utility-wrap">
       <a class="header-search header-search-toggle" onmouseup="setTimeout(function(){document.getElementById('header-search').focus()},10);"><i class="fa fa-search"></i></a>
@@ -81,7 +81,7 @@
       </div>
 
       <div class="row row--justify-content-center">
-                <a class="button button--primary" href="#tell-me-more">Contact</a>
+                <a class="button button--primary" href="mailto:chris.ladden@gmail.com">Contact</a>
               </div>
     </div>
   </div>
